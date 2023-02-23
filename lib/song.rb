@@ -1,5 +1,6 @@
 class Song
-    attr_reader:name ,:artist,:genre
+    attr_reader:name #,:artist,:genre
+    
     @@count=0
     @@artists=[]
     @@genres=[]
@@ -11,6 +12,12 @@ class Song
         @@artists<<artist
         @@genres<<genre
 
+    end
+    def artist
+        @artists
+    end
+    def genre
+        @genres
     end
     
     def self.count
